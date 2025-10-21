@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Carolina Cladera Melgar | Systems Engineer & Data Analyst</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">ACC</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Ana Carolina Cladera Melgar</h1>
+            <p class="subtitle">Systems Engineer | Data Analyst | BI Developer</p>
+            <div class="location">
+                <span><i class="fas fa-map-marker-alt"></i> Santa Cruz de la Sierra, Bolivia</span>
+                <span><i class="fas fa-globe"></i> Open to Remote</span>
+            </div>
+            <p>Systems Engineer with Machine Learning training and experience in business data analysis, integration, and visualization. Specialized in developing solutions with Power BI, SQL Server, and .NET, managing ETL processes and data models that facilitate strategic decision-making.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="mailto:accladeram@gmail.com" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-photo">
+            <img src="./assets/cv.jpg" alt="Ana Carolina">
+            <!-- 👤 -->
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section id="projects" class="featured-projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Highlighted work showcasing end-to-end technical implementations</p>
+        
+        <div class="carousel-container">
+            <div class="carousel-wrapper">
+                <!-- Project 1 -->
+                <div class="project-featured">
+                    <div class="project-featured-image">
+                        <span><i class="fas fa-archway"></i> Architecture Classification</span>
+                    </div>
+                    <div class="project-featured-content">
+                        <h3>Bolivian Architecture Classification System</h3>
+                        <p>Computer vision system for identifying traditional Bolivian architectural styles including Cholets, Adobe houses, Standard homes, and Buildings. Integrated AWS S3, Stable Diffusion for synthetic data generation, and achieved 98.1% precision through Roboflow's ML platform.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">AWS S3</span>
+                            <span class="tag">Roboflow</span>
+                            <span class="tag">Stable Diffusion</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">ML</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://universe.roboflow.com/cloudcompute-sh6kq/architecture-classification-system-mdwfq" target="_blank" class="btn btn-primary">Live Demo</a>
+                            <a href="https://accladeram.github.io/bolivian-architecture-classifier/" class="btn btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-featured">
+                    <div class="project-featured-image">
+                        <span><i class="fas fa-chart-line"></i> CPI Forecasting Model</span>
+                    </div>
+                    <div class="project-featured-content">
+                        <h3>IPC Variation Rate Forecasting</h3>
+                        <p>Machine learning model for forecasting the year-over-year variation rate of the Consumer Price Index (CPI) using automated learning methods. Applied statistical analysis and forecasting techniques to predict economic indicators.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Time Series</span>
+                            <span class="tag">Forecasting</span>
+                            <span class="tag">Statistical Analysis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn btn-primary">View Paper</a>
+                            <a href="#" class="btn btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-controls">
+            <button class="carousel-btn" id="prevBtn">←</button>
+            <button class="carousel-btn" id="nextBtn">→</button>
+        </div>
+        <div class="carousel-dots" id="carouselDots"></div>
+    </section>
+
+    <!-- More Projects -->
+    <section class="more-projects">
+        <h2 class="section-title">More Projects</h2>
+        <p class="section-subtitle">Additional technical work and explorations</p>
+
+        <!-- Filter Tags -->
+        <div class="filter-tags">
+            <button class="filter-tag active" data-filter="all">All</button>
+            <button class="filter-tag" data-filter="bi">Business Intelligence</button>
+            <button class="filter-tag" data-filter="ml">Machine Learning</button>
+            <button class="filter-tag" data-filter="fullstack">Full Stack</button>
+            <button class="filter-tag" data-filter="data">Data Engineering</button>
+            <button class="filter-tag" data-filter="web">Web Development</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+            <!-- Project Card 1 -->
+            <!-- <div class="project-card" data-tags="bi data">
+                <h3>Power BI Audit Dashboards</h3>
+                <p>Interactive dashboards integrating banking system data, Oracle, and multiple sources through ETL processes for auditing decision-making.</p>
+                <div class="project-tags">
+                    <span class="tag">Power BI</span>
+                    <span class="tag">SQL Server</span>
+                    <span class="tag">Oracle</span>
+                    <span class="tag">ETL</span>
+                </div>
+                <a href="#" target="_blank">View Details →</a>
+            </div> -->
+
+            <!-- Project Card 2 -->
+            <!-- <div class="project-card" data-tags="fullstack web">
+                <h3>Insurance Certificate Portal</h3>
+                <p>Public application allowing customers to access their insurance certificates. Led development from requirements to production deployment.</p> 
+                <div class="project-tags">
+                    <span class="tag">Angular</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">Spring Boot</span>
+                    <span class="tag">SQL Server</span>
+                </div>
+                <a href="#" target="_blank">View Details →</a>
+            </div> -->
+
+            <!-- Project Card 3 -->
+            <div class="project-card" data-tags="fullstack web">
+                <h3>Dual Interface App Platform</h3>
+                <p>Application with public sharing page and administrative panel. Led project from MVP to production including database design and implementation.</p>
+                <div class="project-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">Django</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">Firebase</span>
+                </div>
+                <a href="#" target="_blank">View Repository →</a>
+            </div>
+
+            <!-- Project Card 4 -->
+            <!-- <div class="project-card" data-tags="data bi">
+                <h3>Data Warehouse Management</h3>
+                <p>Centralized data environment in SQL Server on Windows Server. ETL processes, query optimization, and automated jobs for daily updates.</p>
+                <div class="project-tags">
+                    <span class="tag">SQL Server</span>
+                    <span class="tag">Windows Server</span>
+                    <span class="tag">ETL</span>
+                    <span class="tag">SQL</span>
+                </div>
+                <a href="#" target="_blank">View Details →</a>
+            </div> -->
+
+            <!-- Project Card 5 -->
+            <!-- <div class="project-card" data-tags="web fullstack">
+                <h3>.NET Custom Solutions</h3>
+                <p>Custom software solutions using .NET 6 to improve audit workflows and address specific operational needs.</p>
+                <div class="project-tags">
+                    <span class="tag">.NET 6</span>
+                    <span class="tag">C#</span>
+                    <span class="tag">SQL</span>
+                </div>
+                <a href="#" target="_blank">View Repository →</a>
+            </div> -->
+
+            <!-- Project Card 6 -->
+            <!-- <div class="project-card" data-tags="ml data">
+                <h3>Network Algorithms Analysis</h3>
+                <p>Implementation and analysis of network algorithms for data processing and optimization using Python and graph theory.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Algorithms</span>
+                    <span class="tag">Graph Theory</span>
+                </div>
+                <a href="#" target="_blank">View Repository →</a>
+            </div> -->
+            <div class="project-card" data-tags="ml data">
+                <h3>Palindrome Checker</h3>
+                <p>This web project allows you to check whether a word or phrase entered by the user is a palindrome. It uses HTML, CSS, and JavaScript to create an interactive interface.</p>
+                <div class="project-tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Algorithms</span>
+                    <span class="tag">Web Development</span>
+                </div>
+                <a href="https://github.com/accladeram/eth_palindromo" target="_blank">View Repository →</a>
+            </div>
+
+
+             <div class="project-card" data-tags="ml data">
+                <h3>Fitness Tracker - Machine Learning Project</h3>
+                <p>Implementation of machine learning models for fitness data analysis using Python.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">Data Analysis</span>
+                </div>
+                <a href="https://github.com/accladeram/fitness-tracker-ml.git" target="_blank">View Repository →</a>
+            </div>
+        </div>
+    </section>
+
+ 
+    <!-- Experience -->
+    <section id="experience" class="experience">
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">Career journey and key accomplishments</p>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker">2024</div>
+                <div class="timeline-content">
+                    <div class="date">June 2024 - Present</div>
+                    <h3>Systems Analyst (Software Developer)</h3>
+                    <p class="company">Frigor S.R.L.</p>
+                    <ul>
+                        <li>Manage centralized SQL Server data warehouse environment on Windows Server for Business Intelligence team analysis and decision-making</li>
+                        <li>Design and maintain data structures, develop ETL processes, optimize SQL queries, and manage integrations with multiple transactional sources</li>
+                        <li>Implement and monitor automated jobs ensuring daily data updates and availability, collaborating with analysts for efficient information access</li>
+                        <li>Develop new system functionalities adapting solutions to business requirements using .NET and React, providing technical support to key users across operational areas</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker">2023</div>
+                <div class="timeline-content">
+                    <div class="date">November 2023 - February 2024</div>
+                    <h3>Technology Risk Auditor (Tech Solutions Developer)</h3>
+                    <p class="company">Banco Ganadero S.A.</p>
+                    <ul>
+                        <li>Collaborated with auditors to gather requirements and develop tools improving their data interpretation and informed decision-making capabilities</li>
+                        <li>Implemented Power BI dashboards integrating data from central banking system, Oracle, and other sources through ETL processes</li>
+                        <li>Developed custom software solutions using .NET 6 to enhance audit workflows and address specific operational needs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker">2022</div>
+                <div class="timeline-content">
+                    <div class="date">November 2022 - November 2023</div>
+                    <h3>Systems Analyst</h3>
+                    <p class="company">Santa Cruz Vida y Salud Seguros S.A.</p>
+                    <ul>
+                        <li>Developed and maintained company's main system using Angular, TypeScript, Spring Boot, and SQL Server</li>
+                        <li>Collaborated with infrastructure, UX/UI design, and cybersecurity teams to improve system efficiency and security</li>
+                        <li>Led creation of public application enabling clients to access their insurance certificates</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker">2022</div>
+                <div class="timeline-content">
+                    <div class="date">March 2022 - October 2022</div>
+                    <h3>Full Stack Developer (Internship)</h3>
+                    <p class="company">MtCorp Latam (now RiaVentures)</p>
+                    <ul>
+                        <li>Developed a full-stack application with public sharing interface and administrative configuration panel using React, Django, PostgreSQL, and Firebase</li>
+                        <li>Participated in all development stages from requirements gathering to MVP delivery and production deployment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Education -->
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Academic background and research</p>       
+        <div class="education-grid">
+            <div class="education-card">
+                <div class="year">2024 - 2025</div>
+                <h3>Postgraduate Diploma in Machine Learning</h3>
+                <p class="institution">Universidad Privada Boliviana (UPB)</p>
+                <div class="thesis">
+                    <strong>Final project:</strong> "Design and Implementation of a Computer Vision System for the Classification of Traditional Bolivian Architectural Styles Using Machine Learning Techniques"
+                </div>
+            </div>
+
+            <div class="education-card">
+                <div class="year">2017 - 2022</div>
+                <h3>Bachelor's in Systems Engineering</h3>
+                <p class="institution">Universidad NUR</p>
+                <div class="thesis">
+                    <strong>Graduation Project:</strong> " Development of a Secure and Efficient Data Exchange Solution for a Hospital Network."
+                </div>
+            </div>
+        </div>
+    </section>  
+    <!-- Skills -->
+    <!-- <section id="skills">
+        <h2 class="section-title">Skills</h2>       
+        <p class="section-subtitle">Technical proficiencies and tools</p>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skill-list">
+                    <span class="skill-item">Python</span>
+                    <span class="skill-item">JavaScript</span>
+                    <span class="skill-item">TypeScript</span>      
+                    <span class="skill-item">C#</span>
+                    <span class="skill-item">Java</span>
+                    <span class="skill-item">SQL</span>
+                </div>
+            </div>  
+            <div class="skill-category">
+                <h3>Frameworks & Libraries</h3>
+                <div class="skill-list">
+                    <span class="skill-item">React</span>
+                    <span class="skill-item">Angular</span>
+                    <span class="skill-item">Django</span>
+                    <span class="skill-item">Spring Boot</span> 
+                    <span class="skill-item">.NET 6</span>
+                    <span class="skill-item">Pandas</span>
+                    <span class="skill-item">NumPy</span>
+                    <span class="skill-item ">Scikit-learn</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Data Tools & Platforms</h3>
+                <div class="skill-list">
+                    <span class="skill-item">Power BI</span>
+                    <span class="skill-item">SQL Server</span>
+                    <span class="skill-item">AWS S3</span>
+                    <span class="skill-item">Roboflow</span>
+                    <span class="skill-item">Oracle</span>  
+                    <span class="skill-item">PostgreSQL</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Other Skills</h3>
+                <div class="skill-list">
+                    <span class="skill-item">ETL Development</span>
+                    <span class="skill-item">Data Visualization</span>
+                    <span class="skill-item">Machine Learning</span>
+                    <span class="skill-item">Computer Vision</span>
+                    <span class="skill-item">Time Series Forecasting</span>
+                    <span class="skill-item">Statistical Analysis</span>
+                </div>
+            </div>
+        </div>     
+    </section> -->
+    <!-- Contact -->
+    <footer id="contact">
+        <h2 style="margin-bottom: 15px;">Let's Connect</h2>
+        <p style="margin-bottom: 10px;">Open to opportunities in Backend Development, Data Engineering, and ML Engineering</p>
+        <p><i class="fas fa-map-marker-alt"></i> Santa Cruz, Bolivia | <i class="fas fa-globe"></i> Open to remote work</p>
+        
+        <div class="footer-links">
+            <a href="https://github.com/accladeram" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/accladera" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:accladeram@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        
+        <p style="margin-top: 30px; font-size: 0.9rem; opacity: 0.8;">© 2025 Ana Carolina Cladera. All rights reserved.</p>
+    </footer> 
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
